@@ -5,25 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Card Boostrap</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-
-
   <script src="/js/bootstrap.bundle.js"></script>
-  <style>
-    body {
-      background-color: grey;
-    }
-  </style>
+  <script src="/js/mioJs.js"></script>
 
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/mioCss.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary   mb-5">
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
     <div class="container-fluid navbar-dark bg-dark ">
       <img src="https://eu.nofxmerch.com/cdn/shop/files/NOFXWhiteLogoTransparent_540x_1.png?v=1679950996&width=500"
-        alt="">
+        class="img-fluid w-100 logo-nofx" alt="">
       <a class="navbar-brand" href="https://nofxmerch.com/">Nofx Merch</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,25 +60,28 @@
 
 
 
-  <section class="container">
-    <div class="row justify-content-between ">
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4 ">
+  <section class="container   ">
+    <div class="row content-center ">
+      <div class=" col-xl-4 col-md-6 col-sm-12 mb-4">
         <div class="card ">
-          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024dc3aa6f7fc3c47999f5205e"
-            class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Liberal Animation</h5>
-
-            <p class="card-text text-center ">Liberal Animation è il primo album ufficiale pubblicato dalla band
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/2GCHIqzroqpjQwszmUdk5F?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center ">
+            <h5 class="card-title ">Liberal Animation</h5>
+            <p class="albumDescription" class="card-text" style="display: none;">
+              Liberal Animation è il primo album
+              ufficiale pubblicato dalla band
               hardcore punk
               statunitense NOFX.
               Il disco è stato pubblicato in vinile 33 giri, CD e musicassetta.
               Fu stampato su vinile nero, in 1500 copie</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center"> Pubblicazione 15 novembre 1988</li>
-            <li class="list-group-item text-center"> Tracce 14</li>
-            <li class="list-group-item text-center">Durata 30:22</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)"> Pubblicazione 15 novembre 1988</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)"> Tracce 14</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 30:22</li>
           </ul>
           <div class="card-body">
           </div>
@@ -90,23 +89,27 @@
       </div>
 
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4 ">
+      <div class="col-xl-4 col-md-6 col-sm-12  mb-4">
         <div class="card ">
-          <img src="https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e01df406f1cbb767d3699f19"
-            class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">S&M Airlines</h5>
-            <p class="card-text text-center">S&M Airlines è il secondo album degli NOFX, pubblicato nel 1989 da
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/43jwsOYwnEf49AmfjcDIOK?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title ">S&M Airlines</h5>
+            <p class="albumDescription" class="card-text" style="display: none;">
+              S&M Airlines è il secondo album degli
+              NOFX, pubblicato nel 1989 da
               Epitaph Records.
               Registrato in 8 giorni sotto la supervisione di Brett Gurewitz, Greg Graffin partecipò ai cori di
               sottofondo
               insieme a Mike e Brett.
             </p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">Pubblicazione 5 settembre 1989</li>
-            <li class="list-group-item text-center">Tracce 12</li>
-            <li class="list-group-item text-center">Durata 33:42</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 5 settembre 1989</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 12</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 33:42</li>
           </ul>
           <div class="card-body">
 
@@ -114,21 +117,25 @@
         </div>
       </div>
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4 ">
+      <div class="col-xl-4 col-md-6 col-sm-12  mb-4 ">
         <div class="card">
-          <img src="	https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b53c62ca6ef14971dc8c48dc"
-            class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Ribbed </h5>
-            <p class="card-text text-center">Ribbed è il terzo album degli NOFX, uscito nel 1991 per Epitaph Records. Il
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/1zSh4dywDdr83HQGpvOwCQ?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title ">Ribbed </h5>
+            <p class="albumDescription" class="card-text" style="display:none;">
+              Ribbed è il terzo album degli NOFX,
+              uscito nel 1991 per Epitaph Records. Il
               disco segna
               una maturazione nel sound della band, con brani più melodici e testi più complessi rispetto ai precedenti
               lavori.</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">Pubblicazione 1º febbraio 1991</li>
-            <li class="list-group-item text-center">Tracce 14</li>
-            <li class="list-group-item text-center">Durata 25:11</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 1º febbraio 1991</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 14</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 25:11</li>
           </ul>
           <div class="card-body">
 
@@ -137,21 +144,25 @@
       </div>
 
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4  ">
+      <div class="col-xl-4 col-md-6 col-sm-12  mb-4  ">
         <div class="card ">
-          <img src="	https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f5f40f1013cd62539fac2e18"
-            class="card-img-top  img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">White Trash, Two Heebs and a Bean</h5>
-            <p class="card-text text-center">White Trash, Two Heebs and a Bean è il quarto album degli NOFX, pubblicato
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/5dbWoqjHDExyrEJD9ftnay?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title ">White Trash, Two Heebs and a Bean</h5>
+            <p class="albumDescription" class="card-text" style="display: none;">
+              White Trash, Two Heebs and a Bean è il
+              quarto album degli NOFX, pubblicato
               nel 1992 da
               Epitaph Records. Unisce punk melodico e satira sociale, consolidando il successo della band nella scena
               hardcore.</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">Pubblicazione 5 novembre 1992</li>
-            <li class="list-group-item text-center">Tracce 13</li>
-            <li class="list-group-item text-center">Durata 32:17</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 5 novembre 1992</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 13</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 32:17</li>
           </ul>
           <div class="card-body">
 
@@ -159,13 +170,16 @@
         </div>
       </div>
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4   ">
+      <div class=" col-xl-4 col-md-6 col-sm-12  mb-4 ">
         <div class="card ">
-          <img src="	https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b00c510f182b92234ca2b93d"
-            class="card-img-top  img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Punk in Drublic</h5>
-            <p class="card-text text-center">Punk in Drublic è il quinto album dei NOFX, uscito nel 1994. Il titolo
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/6Z8BYH27wINoUk4QMUx7gh?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title ">Punk in Drublic</h5>
+            <p class="albumDescription" class="card-text" style="display: none;">Punk in Drublic è il quinto album dei
+              NOFX, uscito nel 1994. Il titolo
               gioca
               su “drunk in
               public” ossia il reato di ubriachezza. È il loro disco più venduto, certificato oro, e include una ghost
@@ -173,10 +187,10 @@
               personaggi dei cartoni.
             </p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">Pubblicazione 19 Luglio 1994</li>
-            <li class="list-group-item text-center">Tracce 17</li>
-            <li class="list-group-item text-center">Durata 39:55</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 19 Luglio 1994</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 17</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 39:55</li>
           </ul>
           <div class="card-body">
 
@@ -184,21 +198,25 @@
         </div>
       </div>
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4  ">
-        <div class="card " >
-          <img src="	https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d749424a9a409f5469bf5577"
-            class="card-img-top  img-fluid" alt="...">
+      <div class="col-xl-4 col-md-6 col-sm-12  mb-4">
+        <div class="card ">
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/1mV82C6196W7GvOS8yoAeM?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           <div class="card-body">
-            <h5 class="card-title">I Heard They Suck Live </h5>
-            <p class="card-text text-center">I Heard They Suck Live è il primo live album dei NOFX, uscito nel 1995.
+            <h5 class="card-title text-center">I Heard They Suck Live </h5>
+            <p class="albumDescription" class="card-text" style="display: none;">
+              I Heard They Suck Live è il primo live
+              album dei NOFX, uscito nel 1995.
               Registrato a
               Hollywood, cattura l’energia grezza, l’ironia tagliente e i classici della band in una delle loro
               performance più rappresentative.</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">Pubblicazione 22 agosto 1995</li>
-            <li class="list-group-item text-center">Durata 40:40</li>
-            <li class="list-group-item text-center">Tracce 19</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 22 agosto 1995</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 40:40</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 19</li>
           </ul>
           <div class="card-body">
 
@@ -206,22 +224,26 @@
         </div>
       </div>
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4  ">
+      <div class="col-xl-4 col-md-6 col-sm-12   mb-4">
 
-        <div class="card " >
-          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02dcf7ced01e6e244ac15fc191"
-            class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
+        <div class="card ">
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/5SoeTpVu2MFq5RlCsdRBf2?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
             <h5 class="card-title">Heavy Petting Zoo</h5>
-            <p class="card-text text-center">Heavy Petting Zoo è il sesto album in studio dei NOFX, uscito nel 1996 per
+            <p class="albumDescription" class="card-text" style="display: none;">
+              Heavy Petting Zoo è il sesto album in
+              studio dei NOFX, uscito nel 1996 per
               Epitaph
               Records. Più cupo e sperimentale, mescola punk e tematiche provocatorie, segnando un cambio rispetto ai
               lavori precedenti.</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">Pubblicazione 31 gennaio 1996</li>
-            <li class="list-group-item text-center">Tracce 13</li>
-            <li class="list-group-item text-center">Durata 34:54</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 31 gennaio 1996</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 13</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 34:54</li>
           </ul>
           <div class="card-body">
 
@@ -229,22 +251,26 @@
         </div>
       </div>
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4 ">
-        <div class="card " >
-          <img src="https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e3548bc00fbd46743eea0577"
-            class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">So Long and Thanks for All the Shoes</h5>
-            <p class="card-text text-center">So Long and Thanks for All the Shoes è il settimo album dei NOFX, uscito
+      <div class="col-xl-4 col-md-6 col-sm-12  mb-4">
+        <div class="card ">
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/1EaixZGxjvdZIsRiyMBZDb?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title ">So Long and Thanks for All the Shoes</h5>
+            <p class="albumDescription" class="card-text" style="display: none;">
+              So Long and Thanks for All the Shoes è il
+              settimo album dei NOFX, uscito
               nel
               1997. Un mix
               veloce di hardcore, ska e ironia tagliente, è considerato uno dei dischi più rappresentativi e amati della
               band.</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">Pubblicazione 21 ottobre 1997</li>
-            <li class="list-group-item text-center">Tracce 16</li>
-            <li class="list-group-item text-center">Durata 30:04</li>
+          <ul class="list-group list-group-flush text-center ">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 21 ottobre 1997</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 16</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 30:04</li>
           </ul>
           <div class="card-body">
 
@@ -253,23 +279,27 @@
       </div>
 
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4  ">
+      <div class=" col-xl-4 col-md-6 col-sm-12  mb-4">
         <div class="card">
-          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02530db954283883866bc21a95"
-            class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Pump Up the Valuum</h5>
-            <p class="card-text text-center">Pump Up the Valuum, uscito nel 2000, è l’ottavo album dei NOFX e l’ultimo
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/37hvw6OVfRLktCmFcU9zHE?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title ">Pump Up the Valuum</h5>
+            <p class="albumDescription" class="card-text" style="display: none;"
+            >Pump Up the Valuum, uscito nel 2000, è
+              l’ottavo album dei NOFX e l’ultimo
               per
               Epitaph.
               Ricco di ironia, ritornelli esplosivi e critica pungente, è un concentrato di puro punk rock in stile
               NOFX.
             </p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">Pubblicazione 13 giugno 2000</li>
-            <li class="list-group-item text-center">Tracce 14</li>
-            <li class="list-group-item text-center">Durata 31:33</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 13 giugno 2000</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 14</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 31:33</li>
           </ul>
           <div class="card-body">
 
@@ -277,21 +307,25 @@
         </div>
       </div>
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4  ">
+      <div class=" col-xl-4 col-md-6 col-sm-12  mb-4 ">
         <div class="card ">
-          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d0a742f83f2dee20919eaddd"
-            class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">The War on Errorism</h5>
-            <p class="card-text text-center">The War on Errorism, uscito nel 2003, è il nono album dei NOFX. Con testi
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/579FRQBE6RnFZXn6dG0DeV?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title ">The War on Errorism</h5>
+            <p class="albumDescription" class="card-text" style="display: none;">
+              The War on Errorism, uscito nel 2003, è
+              il nono album dei NOFX. Con testi
               taglienti e
               politicamente scorretti, il disco mescola hardcore, punk e satira, affrontando temi come la guerra e
               l'ipocrisia politica.</p>
           </div>
-           <ul class="list-group list-group-flush">
-             <li class="list-group-item text-center ">Pubblicazione 6 maggio 2003</li>
-            <li class="list-group-item text-center ">Tracce 14</li>
-            <li class="list-group-item text-center">Durata 36:16</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 6 maggio 2003</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 14</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 36:16</li>
           </ul>
           <div class="card-body">
 
@@ -300,21 +334,25 @@
 
       </div>
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4  ">
-        <div class="card " >
-          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026983bc9d98d9ae5d858fb46d"
-            class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title class=text-center">Ribbed - Live in a Dive</h5>
-            <p class="card-text text-center">Ribbed - Live in a Dive è un album dal vivo dei NOFX, pubblicato nel 1992.
+      <div class=" col-xl-4 col-md-6 col-sm-12  mb-4">
+        <div class="card ">
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/5QdsrZhTTJFAcIeiKSqIZt?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title ">Ribbed - Live in a Dive</h5>
+            <p class="card-text albumDescription" style="display: none;">
+              Ribbed - Live in a Dive è un album dal
+              vivo dei NOFX, pubblicato nel 1992.
               Registrato
               durante il tour per l’album Ribbed, cattura l’energia della band sul palco, con performance travolgenti e
               l'ironia che li contraddistingue.</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">Pubblicazione 3 agosto 2018</li>
-            <li class="list-group-item text-center">Tracce 14</li>
-            <li class="list-group-item text-center">Durata 36:46</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Pubblicazione 3 agosto 2018</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Tracce 14</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">Durata 36:46</li>
           </ul>
           <div class="card-body">
 
@@ -322,20 +360,24 @@
         </div>
       </div>
 
-      <div class="col-4 col-xl-4 col-md-6 col-sm-12 mb-4 ">
+      <div class=" col-xl-4 col-md-6 col-sm-12  mb-4">
         <div class="card ">
-          <img src="https://nofxmerch.com/cdn/shop/files/IMG_0661.png?v=1711995629&width=540" class="card-img-top img-fluid"
-            alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> </h5>
-            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/63jEOTmpfVTKYzeJ6hvIAn?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="card-body text-center">
+            <h5 class="card-title "> </h5>
+            <p class="card-text albumDescription" style="display: none;">
+              Some quick example text to build on the
+              card title and make up the bulk of
               the card’s
               content.</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-center">An item</li>
-            <li class="list-group-item text-center">A second item</li>
-            <li class="list-group-item text-center">A third item</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item" onclick="toggleThisDescription(this)">An item</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">A second item</li>
+            <li class="list-group-item" onclick="toggleThisDescription(this)">A third item</li>
           </ul>
           <div class="card-body">
 
@@ -343,11 +385,8 @@
         </div>
       </div>
 
-
-
-
-
     </div>
+
   </section>
 </body>
 
